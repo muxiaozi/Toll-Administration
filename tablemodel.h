@@ -23,7 +23,7 @@ public:
     //列数
 	int columnCount(const QModelIndex &parent) const;
     //获取表格数据
-	QVariant tableData(const QModelIndex &index, int role) const;
+    QVariant data(const QModelIndex &index, int role) const;
     //获取表头数据
 	QVariant headerData(int section, Qt::Orientation orientation, int role) const;
     //获取表格标记
@@ -51,6 +51,7 @@ private:
 
     //展示风格
     ShowMode showMode;
+
 };
 
 #endif // TABLEMODEL_H

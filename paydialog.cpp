@@ -50,7 +50,7 @@ PayTableModel::PayTableModel()
 {
 }
 
-inline int PayTableModel::rowCount(const QModelIndex &parent) const
+int PayTableModel::rowCount(const QModelIndex &parent) const
 {
     if(parent.isValid()) return 0;
     return datas.size();
@@ -62,7 +62,7 @@ int PayTableModel::columnCount(const QModelIndex &parent) const
     return headers.size();
 }
 
-QVariant PayTableModel::tableData(const QModelIndex &index, int role) const
+QVariant PayTableModel::data(const QModelIndex &index, int role) const
 {
     if(!index.isValid()) return QVariant();
     if(role == Qt::TextAlignmentRole){

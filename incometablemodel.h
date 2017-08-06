@@ -7,13 +7,14 @@
 class IncomeTableModel : public QAbstractTableModel
 {
     Q_OBJECT
+
 public:
-    IncomeTableModel();
+    explicit IncomeTableModel(QObject* parent = NULL);
 
     int rowCount(const QModelIndex &parent) const;
     int columnCount(const QModelIndex &parent) const;
     QVariant headerData(int section, Qt::Orientation orientation, int role) const;
-    QVariant tableData(const QModelIndex &index, int role) const;
+    QVariant data(const QModelIndex &index, int role) const override;
 
     double update(long long julian);
 
@@ -25,7 +26,7 @@ signals:
 
 private:
     QStringList header;
-    QList<QStringList> data;
+    QList<QStringList> m_data;
 
     double allIncome;
 

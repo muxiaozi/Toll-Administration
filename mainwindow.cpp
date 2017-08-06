@@ -45,13 +45,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->cbQueryNumber->addItems(numbers);
 
     //初始化表格模块
-    tableModel = new TableModel();
+    tableModel = new TableModel(this);
     ui->tabQuery->setModel(tableModel);
     ui->tabQuery->verticalHeader()->setHidden(true);
     ui->tabQuery->setAlternatingRowColors(true);
     ui->tabQuery->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
-    incomeTableModel = new IncomeTableModel();
+    incomeTableModel = new IncomeTableModel(this);
     ui->tabIncome->setModel(incomeTableModel);
     //ui->tabIncome->verticalHeader()->setHidden(true);
     ui->tabIncome->setAlternatingRowColors(true);

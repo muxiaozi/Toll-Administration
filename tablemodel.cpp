@@ -35,7 +35,7 @@ int TableModel::columnCount(const QModelIndex &parent) const
     return currentPage->col();
 }
 
-QVariant TableModel::tableData(const QModelIndex &index, int role) const
+QVariant TableModel::data(const QModelIndex &index, int role) const
 {
     return currentPage->getTableData(index, role);
 }
