@@ -1,2 +1,3 @@
 *.db
-Toll-Administration.pro.user
+*.user
+.qmake.stash
