@@ -21,7 +21,7 @@ public:
 
 public:
     AbstractPage();
-    ~AbstractPage();
+    virtual ~AbstractPage();
 
     //获取表头数据
     virtual QStringList getHeaderData() const;
