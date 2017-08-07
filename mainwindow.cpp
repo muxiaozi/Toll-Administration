@@ -159,24 +159,41 @@ void MainWindow::init()
     int currentYear = QDate::currentDate().year();
     QSqlQuery query(QSqlDatabase::database());
 
-    //查询是否有今年的表
+    //Initialize User table
+    query.exec("SELECT COUNT(*) FROM sqlite_master where type='table' and name='user'");
+    if(!query.first() || query.value(0).toInt() != 1){
+        query.exec("CREATE TABLE user(user_id integer primary key autoincrement not null,"
+                   "user_name text not null,floor integer not null,unit integer not null,"
+                   "number integer not null,number1 integer not null)");
+    }
+
+    //Initialize Income table
+    query.exec("SELECT COUNT(*) FROM sqlite_master where type='table' and name='income'");
+    if(!query.first() || query.value(0).toInt() != 1){
+        query.exec("CREATE TABLE income(date integer,time text,money real,info text,"
+                   "primary key(date,time))");
+    }
+
+    //Initialize Config table
+    query.exec("SELECT COUNT(*) FROM sqlite_master where type='table' and name='config'");
+    if(!query.first() || query.value(0).toInt() != 1){
+        query.exec("CREATE TABLE config(key text,value text,unique(key,value));");
+        query.exec("INSERT INTO config values('water_unit_price',8)");
+        query.exec("INSERT INTO config values('clean_unit_price',20)");
+    }
+
+    //Initialize Year table
     query.exec(QString("SELECT COUNT(*) FROM sqlite_master where type='table' and name='y%1'")
                .arg(currentYear));
-    if(query.first()){
-        if(query.value(0).toInt() != 1){ //如果没有今年的表
-            //建立新表
-            query.exec(QString("CREATE TABLE y%1(user_id integer,meter_id integer,meter_name text,"
-                       "quarter1 integer,quarter2 integer,quarter3 integer,quarter4 integer,"
-                       "pay_record integer,primary key(user_id,meter_id))").arg(currentYear));
+    if(!query.first() || query.value(0).toInt() != 1){//如果没有今年的表
+        query.exec(QString("CREATE TABLE y%1(user_id integer,meter_id integer,meter_name text,"
+                   "quarter1 integer,quarter2 integer,quarter3 integer,quarter4 integer,"
+                   "pay_record integer,primary key(user_id,meter_id))").arg(currentYear));
 
-            //更新新表的数据
-            query.exec(QString("INSERT INTO y%1 SELECT user_id,meter_id,meter_name,"
-                               "max(quarter1,quarter2,quarter3,quarter4),0,0,0,pay_record FROM y%2")
-                       .arg(currentYear).arg(currentYear - 1));
-
-            //新的一年，又可以收新的卫生费了
-            setCleanTag(false);
-        }
+        query.exec(QString("INSERT INTO y%1 SELECT user_id,meter_id,meter_name,"
+                           "max(quarter1,quarter2,quarter3,quarter4),0,0,0,pay_record FROM y%2")
+                   .arg(currentYear).arg(currentYear - 1));
+        setCleanTag(false);
     }
 
     //到11月了，准备收卫生费喽
