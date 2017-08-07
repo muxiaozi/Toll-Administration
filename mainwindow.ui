@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>山西大学大东关校区水费管理系统</string>
+   <string>水费管理系统</string>
   </property>
   <property name="windowIcon">
    <iconset resource="source.qrc">
@@ -28,7 +28,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="welcomePage">
        <layout class="QGridLayout" name="gridLayout_5">
@@ -56,7 +56,7 @@
            </font>
           </property>
           <property name="text">
-           <string>欢迎来到山西大学大东关校区水费管理系统！</string>
+           <string>欢迎使用水费管理系统！</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignHCenter|Qt::AlignTop</set>
@@ -591,15 +591,15 @@
            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;尊敬的用户，欢迎您使用水费及卫生费管理系统！&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;开户功能&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;：您可以在这里添加新用户，并指定地址，前提是不能和已有的用户地址重复。如果重复的话，您必须先解决这些冲突！&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;销户功能&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;：您可以删除任意用户，请注意和他相关联的任何信息都将被删除（包括：水表记录，缴费记录）。&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#ff0000;&quot;&gt;删除后不可恢复，请慎重使用此功能！&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;水表管理&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;：您可以在这里轻松管理所有用户的水表。&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;查询功能&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;：您可以选择根据时间查询，根据地址或户主查询，根据是否缴费查询用户的各项纪录。&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;缴费功能&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;：你可以使用此功能轻松完成用户缴费。系统将自动打印凭证。&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;记录功能&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;：在这里，您可以录入用户的水表信息！&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;退出功能&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;：您可以使用此功能退出系统！&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:20pt; font-weight:600;&quot;&gt;尊敬的用户，欢迎您使用水费及卫生费管理系统！&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt; font-weight:600;&quot;&gt;开户功能&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt;&quot;&gt;：您可以在这里添加新用户，并指定地址，前提是不能和已有的用户地址重复。如果重复的话，您必须先解决这些冲突！&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt; font-weight:600;&quot;&gt;销户功能&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt;&quot;&gt;：您可以删除任意用户，请注意和他相关联的任何信息都将被删除（包括：水表记录，缴费记录）。&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt; color:#ff0000;&quot;&gt;删除后不可恢复，请慎重使用此功能！&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt; font-weight:600;&quot;&gt;水表管理&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt;&quot;&gt;：您可以在这里轻松管理所有用户的水表。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt; font-weight:600;&quot;&gt;查询功能&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt;&quot;&gt;：您可以选择根据时间查询，根据地址或户主查询，根据是否缴费查询用户的各项纪录。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt; font-weight:600;&quot;&gt;缴费功能&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt;&quot;&gt;：你可以使用此功能轻松完成用户缴费。系统将自动打印凭证。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt; font-weight:600;&quot;&gt;记录功能&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt;&quot;&gt;：在这里，您可以录入用户的水表信息！&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt; font-weight:600;&quot;&gt;退出功能&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:16pt;&quot;&gt;：您可以使用此功能退出系统！&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="openLinks">
            <bool>false</bool>
@@ -687,7 +687,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>825</width>
-     <height>23</height>
+     <height>28</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_M">
