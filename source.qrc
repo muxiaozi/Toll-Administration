@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>image/addUser.png</file>
+        <file>image/delUser.png</file>
+        <file>image/exit.png</file>
+        <file>image/help.png</file>
+        <file>image/water.png</file>
+        <file>image/clean.png</file>
+        <file>image/manageMeter.png</file>
+        <file>image/record.png</file>
+        <file>image/income.png</file>
+    </qresource>
+</RCC>
