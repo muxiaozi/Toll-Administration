@@ -1,8 +1,4 @@
-﻿﻿#if _MSC_VER >= 1600
-#pragma execution_character_set("utf-8")
-#endif
-
-#include "incometablemodel.h"
+﻿#include "incometablemodel.h"
 #include <QSqlQuery>
 #include <QDate>
 #include <QMessageBox>

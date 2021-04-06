@@ -1,8 +1,4 @@
-﻿﻿#if _MSC_VER >= 1600
-#pragma execution_character_set("utf-8")
-#endif
-
-#include "paydialog.h"
+﻿#include "paydialog.h"
 #include "ui_paydialog.h"
 #include <QSqlQuery>
 #include "database.h"

@@ -1,4 +1,4 @@
-﻿﻿#ifndef TABLEMODEL_H
+﻿#ifndef TABLEMODEL_H
 #define TABLEMODEL_H
 
 #include <QAbstractTableModel>
